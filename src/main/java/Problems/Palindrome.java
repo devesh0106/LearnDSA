@@ -10,6 +10,7 @@ public class Palindrome {
             sum=(sum*10)+rem; //reverse
             n=n/10;
         }
+        System.out.println("Original Number is "+temp+" and "+"Reversed Number is "+sum);
         if(temp==sum){
             System.out.println("Palindrome");
         }
@@ -18,6 +19,6 @@ public class Palindrome {
     }
     public static void main(String[] args) {
         int number=454;
-        palindrome(number);
+        Palindrome.palindrome(number);
     }
 }
