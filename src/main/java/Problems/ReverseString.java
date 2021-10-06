@@ -2,7 +2,7 @@ package Problems;
 
 public class ReverseString {
     public static void main(String[] args) {
-        String  str = "ertyui";//AnanA
+        String  str = "racecar";//AnanA
         char[] chrStr = str.toCharArray();
         int length = str.length();
         String rev="";
