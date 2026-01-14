@@ -1,4 +1,4 @@
-package Leetcode;
+package Problems;
 /*Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
         You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -10,7 +10,7 @@ package Leetcode;
         Output: [0,1]
         Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].*/
 
-public class TwoSum {
+public class BruteForceTwoSum {
     public int[] indices(int[] nums,int target){
         int sum=0; int[] index = new int[2];
      for(int i=0;i<nums.length;i++){
@@ -24,7 +24,7 @@ public class TwoSum {
         return new int[0];
     }
     public static void main(String[] args) {
-        TwoSum s = new TwoSum();
+        BruteForceTwoSum s = new BruteForceTwoSum();
         int[] result = s.indices(new int[]{2, 7, 11, 15}, 9);
         System.out.println("[" + result[0] + ", " + result[1] + "]");
     }
